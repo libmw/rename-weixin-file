@@ -12,6 +12,7 @@ fs.readdir(filePath,function(err,files){
             if(isNaN(date.getDate())){
                 return;
             }
+            date = new Date(+date + 8 * 3600*1000);
             var dateName = date.toISOString().replace(/[-:]/g, '').replace('T','_');
             var oldPath = path.join(filePath,filename);
             var newPath = path.join(filePath, dateName + fileInfo.ext);
