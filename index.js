@@ -1,6 +1,13 @@
+/*
+ * @Description: 
+ * @Author: limengjun
+ * @Date: 2021-09-30 16:08:41
+ * @LastEditors: limengjun
+ * @LastEditTime: 2021-10-28 23:10:00
+ */
 var fs = require('fs');
 var path = require('path');
-var filePath = path.resolve('C:/Users/lmj/Desktop/WeiXin');
+var filePath = path.resolve('D:/照片/待处理/Camera');
 fs.readdir(filePath,function(err,files){
     if(err){
         console.warn(err)
