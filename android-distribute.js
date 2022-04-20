@@ -3,11 +3,11 @@
  * @Author: limengjun
  * @time: 2021-07-18 20:16:35
  * @LastEditors: limengjun
- * @LastEditTime: 2021-07-18 21:50:38
+ * @LastEditTime: 2021-10-28 23:07:50
  */
 var fs = require("fs");
 var path = require("path");
-var filePath = path.resolve("D:/WeiXin");
+var filePath = path.resolve("D:/照片/待处理/Camera");
 fs.readdir(filePath, function (err, files) {
   if (err) {
     console.warn(err);
