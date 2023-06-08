@@ -7,7 +7,7 @@
  */
 var fs = require('fs');
 var path = require('path');
-var filePath = path.resolve('D:/照片/待处理/Camera');
+var filePath = path.resolve('D:/WeChat');
 fs.readdir(filePath,function(err,files){
     if(err){
         console.warn(err)

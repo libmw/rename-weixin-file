@@ -1,5 +1,8 @@
 /*
  * @Description: 把手机照片分发到以"年/月日"格式的目录中
+ * 这个文件的使用场景是，当你把手机camera文件夹里的照片拷贝出来后，运行这个文件可用把这些照片分别分发到不同的目录中，
+ * 目录名称则是照片的所属日期。
+ * 同样的，iphone-distribute则是分发iPhone拍摄的照片目录
  * @Author: limengjun
  * @time: 2021-07-18 20:16:35
  * @LastEditors: limengjun
