@@ -23,7 +23,7 @@ export async function moveFileToPhotos(filePath, photosPath, getDirPrefix) {
 
           const prefix = getDirPrefix(fileInfo.name);
           if (!prefix) {
-            return;
+            continue;
           }
 
           let targetPath;

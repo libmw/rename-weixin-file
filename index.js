@@ -11,7 +11,7 @@ import path from "path";
 import { renameWeChat } from "./utils/renameWeChat.js";
 import { moveFileToPhotos } from "./utils/moveFileToPhotos.js";
 
-const processPath = path.resolve("D:/photoTest");
+const processPath = path.resolve("D:/photos");
 
 const targetPath = path.join(processPath, "owner");
 const weChatPath = path.join(processPath, "WeChat");
