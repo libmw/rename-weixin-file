@@ -8,7 +8,7 @@ export async function renameWeChat(filePath) {
   return new Promise((resolve, reject) => {
     fs.readdir(filePath, function (err, files) {
       if (err) {
-        reject();
+        reject(err);
       } else {
         //遍历读取到的文件列表
         files.forEach(function (filename) {
