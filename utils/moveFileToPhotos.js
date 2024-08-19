@@ -1,10 +1,14 @@
 /*
  * @Description: 把已经处理过的微信文件分发到已经建立好的图片目录中
- * 这个文件的使用场景是，当已经按照日期把手机里的照片分发到各个文件夹中后，微信文件可用通过次文件自动复制到相应的日期文件夹中。
+ * 这个文件的使用场景是，当已经按照日期把手机里的照片分发到各个文件夹中后，
+ * 微信文件可用通过次文件自动复制到相应的日期文件夹中。
  * @Author: limengjun
  * @time: 2021-07-18 20:16:35
  * @LastEditors: limengjun
  * @LastEditTime: 2021-10-28 23:07:50
+ * 把filePath文件夹里的文件移动到photosPath文件夹中的getDirPrefix得到的文件名中
+ * getDirPrefix的参数是文件名，
+ * getDirPrefix 的功能就是，根据给出的文件名，得到一个类似'0617'的文件夹名称，
  */
 import fs from "fs";
 import path from "path";
@@ -37,9 +41,9 @@ export async function moveFileToPhotos(filePath, photosPath, getDirPrefix) {
           const fromPath = path.join(filePath, filename);
           const toPath = path.join(targetPath, filename);
 
-          fs.renameSync(fromPath, toPath, (err) => {
-            if (err) throw err;
-          });
+          //console.log("准备移动：", fromPath, toPath);
+          //continue;
+          fs.copyFileSync(fromPath, toPath);
         }
         resolve();
       }
