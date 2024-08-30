@@ -41,9 +41,9 @@ export async function moveFileToPhotos(filePath, photosPath, getDirPrefix) {
           const fromPath = path.join(filePath, filename);
           const toPath = path.join(targetPath, filename);
 
-          //console.log("准备移动：", fromPath, toPath);
-          //continue;
-          fs.copyFileSync(fromPath, toPath);
+          fs.renameSync(fromPath, toPath, (err) => {
+            if (err) throw err;
+          });
         }
         resolve();
       }

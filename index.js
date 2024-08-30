@@ -13,7 +13,7 @@ import { moveFileToPhotos } from "./utils/moveFileToPhotos.js";
 
 const processPath = path.resolve("D:/photoTest");
 
-const targetPath = path.resolve("E:/微云/图片/2024");
+const targetPath = path.join(processPath, "owner");
 
 const weChatPath = path.join(processPath, "WeChat");
 const WeiXinPath = path.join(processPath, "WeiXin");
