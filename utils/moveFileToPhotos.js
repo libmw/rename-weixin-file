@@ -8,7 +8,7 @@
  * @LastEditTime: 2021-10-28 23:07:50
  * 把filePath文件夹里的文件移动到photosPath文件夹中的getDirPrefix得到的文件名中
  * getDirPrefix的参数是文件名，
- * getDirPrefix 的功能就是，根据给出的文件名，得到一个类似'0617'的文件夹名称，
+ * getDirPrefix的功能就是，根据给出的文件名，得到一个类似'0617'的文件夹名称，
  */
 import fs from "fs";
 import path from "path";
